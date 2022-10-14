@@ -30,3 +30,5 @@ The default parameters can be changed by specifying them in the function call.
 ```
 run_exercise_model(s=0.5, k=1, n=4, a=c(1,2,5,9))
 ```
+
+This function returns a data frame containing six variables. The first column contains the time, and the final columm contains the final TRI.
