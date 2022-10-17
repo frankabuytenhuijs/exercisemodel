@@ -53,6 +53,7 @@
   df_all <- data.frame()
   for( i in 1:nrow(s)){
     tri <-  3*(s[i,length(s[i,])-1] - s[i,length(s[i,])]) + 1
+    s[i,length(s[i,])] <- abs(s[i,length(s[i,])] - 1 ) + 1
     s_tri <- append(s[i,2:6], c(tri))
     df_all <- rbind(df_all, s_tri)
   }
